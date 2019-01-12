@@ -1,0 +1,89 @@
+
+// user/create
+
+URL: http://localhost/escolas_rest_api/api/user/create.php
+METODO: POST
+
+DADOS DE ENTRADA: formato json
+
+	{
+	   "nome": "Murilo Perosa",
+	   "email": "perosamurilo@gmail.com",
+	   "senha": "123456",
+	   "token": "123456789"
+	}
+
+
+PADRAO DE SAIDA: formato json
+
+[
+	{
+		"sucesso": true,
+		"mensagem": "Usuário criado com sucesso."
+	}
+]
+
+---------------------------------------------------------------------
+
+// user/login
+
+URL: http://localhost/escolas_rest_api/api/user/login.php
+METODO: POST
+
+DADOS DE ENTRADA: formato json
+
+	{
+	   "email": "perosamurilo@gmail.com",
+	   "senha": "123456",
+	   "token": "123456789"
+	}
+
+
+PADRAO DE SAIDA: formato json
+
+[
+    {
+        "sucesso": true,
+        "mensagem": "Login efetuado com sucesso.",
+        "id": "28",
+        "nome": "Murilo Perosa",
+        "email": "perosamurilo@gmail.com"
+    }
+]
+
+---------------------------------------------------------------------
+
+// user/disable
+
+URL: http://localhost/escolas_rest_api/api/user/disable.php
+METODO: PUT
+
+DADOS DE ENTRADA: formato json
+
+	{
+	   "id": "28",
+	   "senha": "123456",
+	   "token": "123456789"
+	}
+
+
+PADRAO DE SAIDA: formato json
+
+[
+    {
+        "sucesso": true,
+        "mensagem": "Usuário desativado com sucesso."
+    }
+]
+
+
+---------------------------------------------------------------------
+
+// user/update
+
+
+
+---------------------------------------------------------------------
+
+// user/update_password
+
